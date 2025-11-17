@@ -11,7 +11,8 @@ export default function Section({ id, title, children, isActive }: SectionProps)
   return (
     <section
       id={id}
-      className="scroll-mt-20 animate-in fade-in slide-in-from-bottom-4 duration-500"
+      className="scroll-mt-20 fade-in duration-500"
+      // removed invalid animate-in, fade-in, slide-in-from-bottom-4 and replaced with fade-in class
     >
       <div className="group relative">
         <div className="absolute -inset-1 bg-gradient-to-r from-blue-500/20 to-accent/20 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-500"></div>

@@ -126,8 +126,9 @@
 }
 
 @layer components {
+  /* Replaced invalid animate-in with proper custom animation */
   .fade-in {
-    @apply animate-in fade-in duration-500;
+    animation: fadeIn 0.5s ease-out;
   }
 
   .glass {
